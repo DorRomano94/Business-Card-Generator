@@ -1,0 +1,303 @@
+* {
+    box-sizing: border-box;
+  }
+  
+
+ 
+  
+  section {
+    height: 100vh;
+    width: auto;
+    position: relative;
+  }
+  
+  
+  .card2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -150px 0 0 -250px;
+    height: 300px;
+    width: 500px;
+    background: #f8f8fa;
+    box-shadow: 1px 1px 10px -2px rgba(0,0,0,0.7);
+    overflow: hidden;
+  }
+  
+  #front .top {
+    height: 12px;
+    background: linear-gradient(
+      45deg,
+      #0b91ce,
+      #0b91ce 60%,
+      #074e90 60%
+    )
+  }
+  
+  #front .logo {
+    display: block;
+    position: absolute;
+    top: 95px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 500px;
+  }
+  
+  .logo > * {
+      font-size: 1em;
+      margin: 0;
+      padding: 0;
+  }
+  
+  .logo .symbol {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+  }
+  
+  .logo .symbol .hexagon {
+    fill:#FFFFFF;
+    stroke:#D2D3D5;
+    stroke-width:3;
+    stroke-miterlimit:10;
+  }
+  
+  
+  .logo h1 {
+    text-transform: uppercase;
+    width: auto;
+    color: #5ba1c1;
+    font-size: 1.6em;
+    margin: 4px 0 0 0;
+  }
+  
+  .logo h1 span {
+    font-weight: 100;
+  }
+  
+  .logo h2 {
+    font-weight: 600;
+    color: #486078;
+    font-size: .6em;
+    text-transform: uppercase;
+  }
+  
+  .hexagon {
+    display: inline-block;
+     height: 50px;
+     width: 50px;
+     background: #000;
+  }
+  
+  #front .bottom {
+    position: absolute;
+    left: 50%;
+    bottom:0;
+    transform-origin: left top;
+    transform: translatex(-50%) skewx(45deg);
+    
+    height: 45px;
+    width: 66.666%;
+    background: #d2d3d5;
+  }
+  
+  #front .bottom:before {
+    content: " ";
+    position: absolute;
+    top: 45%;
+    right: 90%;
+    height: 55%;
+    width: 160px;
+    background: rgba(11, 141, 203, 0.7);
+  }
+  
+  #front .bottom:after {
+    content: " ";
+    position: absolute;
+    top: -70%;
+    left: 22%;
+    height: 170%;
+    width: 120%;
+    background: rgba(11, 141, 203, 0.7);
+  }
+  
+  #back .top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: top left;
+    transform: skewx(45deg);
+    height: 50px;
+    width: 100%;
+  }
+  
+  #back .top:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -30px;
+    width: 80%;
+    height: 55%;
+    background: #0978ad;
+    opacity: .8;
+    z-index: 3
+  }
+  
+  #back .top:after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: -10px;
+    height: 100%;
+    width: 60%;
+    background: #D2D3D5;
+    z-index: 1;
+  }
+  
+  #back .bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 40%;
+    width: 90%;
+    background: ;
+    transform-origin: bottom right;
+    transform: skewx(45deg);
+    
+  }
+  
+  #back .bottom .inner-div {
+    width: 100%;
+    height: 100%;
+    background: #0978ad;
+    opacity: .8;
+    z-index: 3;
+  }
+  
+  #back .bottom:before {
+    content: " ";
+    position: absolute;
+    top: -30px;
+    left: 0;
+    height: 90%;
+    width: 70%;
+    background: #D2D3D5;
+  }
+  
+  #back .bottom:after {
+    z-index: -1;
+    position: absolute;
+    content: " ";
+    bottom: 0;
+    right: -80px;
+    width: 60%;
+    height: 20px;
+    background: #0978ad;
+    opacity: .8;
+  }
+  
+  #back .mid {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  #back .mid .inner-div {
+    position: absolute;
+    z-index: 1;
+    width: 460px;
+  }
+  
+  #back .typography {
+    text-indent: 20px;
+    font-weight: 100;
+    margin: 0;
+    text-transform: uppercase;
+    color: #5ba1c1;
+  }
+  
+  #back .designer {
+    margin-top: 30px;
+    color: #5ba1c1;
+    font-size: 1.7em;
+  }
+  
+  #back .designer span {
+    font-weight: 600;
+  }
+  
+  #back .title {
+    font-size: 1em;
+    color: #074e90;
+  }
+  
+  #back .icons {
+    margin-top: 55px;
+    padding-left: 30px;
+  }
+  
+  
+  
+  #back .icons .icon {
+    position: relative;
+    height: 28px;
+    width: 28px;
+    background: #fff;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    text-align: center;
+    padding-left: 1px;
+  }
+  
+  #back .icons .icon i {
+    display: inline-block;
+    color: #104980;
+  }
+  
+  .icon i{
+      line-height: 26px;
+  }
+  
+  .icon:nth-child(3) i{
+      line-height: 28px;
+  }
+  
+  .icon span {
+    text-align: left;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    width: 300px;
+    font-size: .5em;
+    transform: translateY(-55%);
+  }
+  
+  .icon:nth-child(n+2) span {
+    color:#fff;
+  }
+  
+  .qr {
+    position: absolute;
+    top: 140px;
+    right: 0;
+    height: 100px;
+    width: 100px;
+    background: #FFF;
+    border: 1px solid #0978ad;
+  }
+  
+  .qr span {
+    position: absolute;
+    display: inline-block;
+    color: #0978ad;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%)
+  }
